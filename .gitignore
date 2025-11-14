@@ -4,8 +4,10 @@
 **/build/
 **/.env
 
-# VS Code
+# VS Code / Editor / OS
 .vscode/
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
