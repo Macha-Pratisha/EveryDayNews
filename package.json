@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix backend && npm install --prefix Manager-Portal && npm install --prefix Customer-Portal && npm install --prefix Delivery-Portal && npm install --prefix main-frontend && npm run build --prefix Manager-Portal && npm run build --prefix Customer-Portal && npm run build --prefix Delivery-Portal && npm run build --prefix main-frontend"
+    "build": "npm install --prefix backend && npm install --prefix Manager-Portal && npm install --prefix Customer-Portal && npm install --prefix Delivery-Portal && npm install --prefix main-frontend && npm run build --prefix Manager-Portal && npm run build --prefix Customer-Portal && npm run build --prefix Delivery-Portal && npm run build --prefix main-frontend",
+    "start": "npm run start --prefix backend"
   },
   "keywords": [],
   "author": "",
