@@ -1,41 +1,59 @@
+
+import { UserCog, Users, Truck } from "lucide-react";
+
 export default function MainPage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-100 to-blue-50 p-10">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 p-10">
 
-      <h1 className="text-5xl font-extrabold text-gray-800 mb-16 text-center drop-shadow-md">
-        Welcome to the Portal
-      </h1>
+      {/* Welcome Line */}
+      <h3 className="text-4xl md:text-5xl font-extrabold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-400 drop-shadow-md animate-pulse">
+  Welcome to
+</h3>
 
+{/* Title */}
+<h1 className="text-5xl font-extrabold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-400 drop-shadow-md animate-pulse">
+  Newspaper Agency Automation Software
+</h1>
+
+
+      {/* Card Container */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl">
 
         {/* Manager Portal */}
-        <div className="bg-white rounded-3xl shadow-lg border-2 border-indigo-400 hover:shadow-2xl transform hover:-translate-y-2 transition-all p-8 flex flex-col items-center">
-          <div className="w-20 h-20 flex items-center justify-center rounded-full bg-indigo-400 text-white text-3xl font-bold mb-6">
-            M
+        <div className="relative bg-white rounded-[3rem] shadow-lg border-2 border-transparent p-8 flex flex-col items-center transition-transform duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl group">
+          <div className="absolute -inset-1 rounded-[3rem] bg-gradient-to-r from-indigo-200 via-indigo-300 to-indigo-200 opacity-0 group-hover:opacity-40 transition-opacity duration-700 ease-in-out blur-lg"></div>
+          <div className="w-24 h-24 flex items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-indigo-600 text-white text-4xl font-bold mb-6 shadow-md z-10">
+            <UserCog className="w-12 h-12" />
           </div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Manager Portal</h2>
-          <p className="text-gray-500 text-center mb-4">Go to Manager Login / Signup</p>
-          <a href="https://manager.yourdomain.com" target="_blank" className="px-6 py-2 rounded-full bg-indigo-500 text-white font-semibold hover:bg-indigo-600 transition-colors">
+          <h2 className="text-3xl font-bold text-gray-800 mb-2 text-center z-10">Manager Portal</h2>
+          <p className="text-gray-500 text-center mb-4 z-10">Go to Manager Login / Signup</p>
+          <a href="http://localhost:8082/login" target="_blank" className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-400 to-indigo-500 text-white font-semibold hover:from-indigo-500 hover:to-indigo-600 transition-colors duration-500 z-10">
             Enter
           </a>
         </div>
 
-        {/* Customer Portal */}
-        <div className="bg-white rounded-3xl shadow-lg border-2 border-green-400 hover:shadow-2xl transform hover:-translate-y-2 transition-all p-8 flex flex-col items-center">
-          <div className="w-20 h-20 flex items-center justify-center rounded-full bg-green-400 text-white text-3xl font-bold mb-6">C</div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Customer Portal</h2>
-          <p className="text-gray-500 text-center mb-4">Go to Customer Login / Signup</p>
-          <a href="https://customer.yourdomain.com" target="_blank" className="px-6 py-2 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition-colors">
+        {/* Customer Portal (Orange Theme) */}
+        <div className="relative bg-white rounded-[3rem] shadow-lg border-2 border-transparent p-8 flex flex-col items-center transition-transform duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl group">
+          <div className="absolute -inset-1 rounded-[3rem] bg-gradient-to-r from-orange-200 via-orange-300 to-orange-200 opacity-0 group-hover:opacity-40 transition-opacity duration-700 ease-in-out blur-lg"></div>
+          <div className="w-24 h-24 flex items-center justify-center rounded-full bg-gradient-to-br from-orange-400 to-orange-600 text-white text-4xl font-bold mb-6 shadow-md z-10">
+            <Users className="w-12 h-12" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2 text-center z-10">Customer Portal</h2>
+          <p className="text-gray-500 text-center mb-4 z-10">Go to Customer Login / Signup</p>
+          <a href="http://localhost:8080/login" target="_blank" className="px-8 py-3 rounded-full bg-gradient-to-r from-orange-400 to-orange-500 text-white font-semibold hover:from-orange-500 hover:to-orange-600 transition-colors duration-500 z-10">
             Enter
           </a>
         </div>
 
-        {/* Delivery Portal */}
-        <div className="bg-white rounded-3xl shadow-lg border-2 border-orange-400 hover:shadow-2xl transform hover:-translate-y-2 transition-all p-8 flex flex-col items-center">
-          <div className="w-20 h-20 flex items-center justify-center rounded-full bg-orange-400 text-white text-3xl font-bold mb-6">D</div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Delivery Portal</h2>
-          <p className="text-gray-500 text-center mb-4">Go to Delivery Login / Signup</p>
-          <a href="https://delivery.yourdomain.com" target="_blank" className="px-6 py-2 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition-colors">
+        {/* Delivery Portal (Green Theme) */}
+        <div className="relative bg-white rounded-[3rem] shadow-lg border-2 border-transparent p-8 flex flex-col items-center transition-transform duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl group">
+          <div className="absolute -inset-1 rounded-[3rem] bg-gradient-to-r from-green-200 via-green-300 to-green-200 opacity-0 group-hover:opacity-40 transition-opacity duration-700 ease-in-out blur-lg"></div>
+          <div className="w-24 h-24 flex items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-green-600 text-white text-4xl font-bold mb-6 shadow-md z-10">
+            <Truck className="w-12 h-12" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2 text-center z-10">Delivery Portal</h2>
+          <p className="text-gray-500 text-center mb-4 z-10">Go to Delivery Login / Signup</p>
+          <a href="http://localhost:8081/login" target="_blank" className="px-8 py-3 rounded-full bg-gradient-to-r from-green-400 to-green-500 text-white font-semibold hover:from-green-500 hover:to-green-600 transition-colors duration-500 z-10">
             Enter
           </a>
         </div>

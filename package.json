@@ -1,0 +1,12 @@
+{
+  "name": "everydaynews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix Manager-Portal && npm install --prefix Customer-Portal && npm install --prefix Delivery-Portal && npm install --prefix main-frontend && npm run build --prefix Manager-Portal && npm run build --prefix Customer-Portal && npm run build --prefix Delivery-Portal && npm run build --prefix main-frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
